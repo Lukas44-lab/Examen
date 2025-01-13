@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
+
+:root{
+    --primary:Orange: hsl(25, 97%, 53%);
+    --neutral-white:White: hsl(0, 0%, 100%);
+    --neutral-Light-Grey:hsl(217, 12%, 63%);
+    --neutral-Dark-Blue:hsl(213, 19%, 18%);
+    --neutral-Very-Dark-Blue:hsl(216, 12%, 8%);
+    
+}
+.overpass {
+    font-family: "Overpass", serif;
+    font-optical-sizing: auto;
+    font-weight: 400,700;
+    font-style: normal;
+  }
