@@ -6,11 +6,33 @@
     --neutral-Light-Grey:hsl(217, 12%, 63%);
     --neutral-Dark-Blue:hsl(213, 19%, 18%);
     --neutral-Very-Dark-Blue:hsl(216, 12%, 8%);
-    
+    --Font-size-paragraph:15px 
 }
 .overpass {
     font-family: "Overpass", serif;
     font-optical-sizing: auto;
     font-weight: 400,700;
     font-style: normal;
+  }
+    ul.button-list{
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; 
+      
+    }
+    ul.button-list li{
+      display: inline;
+      margin: 10px 0;
+    }
+
+    ul.button-list button{
+    border-radius: 50%;
+  }
+
+  .home{
+    border: 1px solid;
+    width: 320px;
+    border-radius: 5%;
   }
