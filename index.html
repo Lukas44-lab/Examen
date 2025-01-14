@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Examen pagina web">
     <title>El desafio</title>
-    <link rel="shortcut icon" href="./modulo1/challenge/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <section class="home">
-        <img src="./modulo1/challenge/images/icon-star.svg" alt="icon of the star">
-        <h1>¿como lo hicimos</h1>
-        <p>Por favor,haznos saber como lo hicimos con tu solicitud de soporte</p>
-        <p>Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!</p>
+    <div class="container">
+        <section class="logo-star">
+            <img src="./assets/icon-star.svg" alt="icon of the star">
+        </section>
+        <section class="survey">
+            <h1>¿como lo hicimos?</h1>
+            <p>Por favor,haznos saber como lo hicimos con tu solicitud de soporte</p>
+            <p>Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!</p>
+        </section>
+        <section class="choices">
             <ul class="button-list">
                 <li><button>1</button></li>
                 <li><button>2</button></li>
@@ -22,12 +27,21 @@
                 <li><button>4</button></li>
                 <li><button>5</button></li>
             </ul>
-            <button>enviar</button>
-    </section>
-    <section class="finish">
-        <img src="./modulo1/challenge/images/illustration-thank-you.svg" alt="images of thank you">
-        <p>Agradecemos que te hayas tomado el tiempo para dar una calificacion.</p>
-        <p>Si alguna vez necesitas mas ayuda,no dudes en volver a ponerte en contacto con nosotros</p>
-    </section>
+        </section>
+        <section class="button-submit">
+            <button type="submit">ENVIAR</button>
+        </section>
+    </div>
+    <div class="container-message">
+        <section class="logo-thank-you">
+            <img src="./assets/illustration-thank-you.svg" alt="images of thank you">   
+            <p class="survey-points">Seleccionaste n de 5</p>
+        </section>
+        <section class="messaje">
+            <h2>!Gracias¡</h2>
+            <p>Agradecemos que te hayas tomado el tiempo para dar una calificacion.</p>
+            <p>Si alguna vez necesitas mas ayuda,no dudes en volver a ponerte en contacto con nosotros</p>
+        </section>
+    </div>
 </body>
 </html>
