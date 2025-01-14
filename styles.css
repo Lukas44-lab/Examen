@@ -70,11 +70,7 @@ cursor: pointer;
 .container-message {
   max-width: var(--mobile-size);
   background: var(--neutral-Very-Dark-Blue);
-  background: linear-gradient(
-      45deg,
-      var(--neutral-Very-Dark-Blue) 45%,
-      var(--neutral-dark-blue) 100%
-  );
+  background: linear-gradient(45deg,var(--neutral-Very-Dark-Blue) 45%,var(--neutral-dark-blue) 100%);
   border: 0.1px solid var(--neutral-white);
   border-radius: 1rem;
   margin: 2rem;
@@ -110,6 +106,7 @@ button:hover {
 }
 .container-message {
 text-align: center;
+background: linear-gradient(45deg,var(--neutral-white) 33%,var(--neutral-dark-blue) 66%,var(--neutral-Very-Dark-Blue) 100%);
 }
 .logo-thank-you {
 margin: 1rem;
@@ -128,11 +125,6 @@ font-weight: var(--weight-light);
 &:hover {
     font-weight: var(--weight-high);
     background: var(--neutral-white);
-    background: linear-gradient(
-        45deg,
-        var(--neutral-white) 33%,
-        var(--neutral-dark-blue) 66%,
-        var(--neutral-Very-Dark-Blue) 100%
-    );
+    
 }
 }
