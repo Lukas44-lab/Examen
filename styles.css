@@ -1,42 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
 
 :root{
-    --primary-orange: hsl(25, 97%, 53%);
-    --neutral-white: hsl(0, 0%, 100%);
-    --neutral-Light-Grey:hsl(217, 12%, 63%);
-    --neutral-Dark-Blue:hsl(213, 19%, 18%);
-    --neutral-Very-Dark-Blue:hsl(216, 12%, 8%);
-    --Font-size-paragraph:15px 
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-Light-Grey:hsl(217, 12%, 63%);
+  --neutral-Dark-Blue:hsl(213, 19%, 18%);
+  --neutral-Very-Dark-Blue:hsl(216, 12%, 8%);
+  --Font-size-paragraph:15px;
+  --font-primary: "Overpass", serif;
+  --weight-light: 400;
+  --weight-high: 700;
+  --mobile-size: 375px; 
 }
-.overpass {
-    font-family: "Overpass", serif;
-    font-optical-sizing: auto;
-    font-weight: 400,700;
-    font-style: normal;
-  }
-    .button-list{
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      padding: 0;
-      margin: 0; 
-      
-    }
-    .button-list li{
-      display: inline;
-      margin: 10px 0;
-    }
-
-    .button-list button{
-    border-radius: 50%;
-    color: var(--neutral-Light-Grey);
+body {
+background-color: var(--neutral-Very-Dark-Blue);
+font-family: var(--font-primary);
+font-size: var(--Font-size-paragraph);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1,h2 {
+font-weight: var(--weight-high);
+color: var(--neutral-white);
+}
+p {
+color: var(--neutral-Dark-Blue);
+font-weight: var(--weight-light);
+}
+.button-list {
+list-style: none;
+margin: 0;
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding: 0;
+display: flex;
+justify-content: space-around;
+button {
     background-color: var(--neutral-Dark-Blue);
-  }
-
-  .home{
+    color: var(--neutral-white);
+    font-weight: var(--weight-high);
+    width: 1rem;
+    height: 1rem;
     padding: 1rem;
-    border: 1px solid;
-    border-radius: 5%;
-    background: var(--neutral-Dark-Blue);
-    background: linear-gradient(45deg,var(--neutral-Dark-Blue), var(--neutral-Light-Grey));
-  }
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+}
+.button-list button:hover,
+.button-list button.active {
+  background-color: var(--neutral-white);
+  color: var(--neutral-Very-Dark-Blue);
+}
+.button-submit button {
+background-color: var(--primary-orange);
+color: var(--neutral-Dark-Blue);
+font-weight: var(--weight-high);
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+}
+.container,
+.container-message {
+  max-width: var(--mobile-size);
+  background: var(--neutral-Very-Dark-Blue);
+  background: linear-gradient(
+      45deg,
+      var(--neutral-Very-Dark-Blue) 45%,
+      var(--neutral-dark-blue) 100%
+  );
+  border: 0.1px solid var(--neutral-white);
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo-star {
+background-color: var(--neutral-dark-blue);
+width: 2rem;
+height: 2rem;
+border: 1px solid var(--neutral-Very-Dark-Blue);
+border-radius: 50%;
+margin-block: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.survey {
+display: flex;
+flex-direction: column;
+justify-content: baseline;
+gap: 1rem;
+}
+.button-submit {
+display: flex;
+justify-content: center;
+align-items: center;
+button:hover {
+    background-color: var(--neutral-white);
+    color: var(--primary-color);
+}
+}
+.container-message {
+text-align: center;
+}
+.logo-thank-you {
+margin: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.survey-points {
+margin: 1rem;
+padding: 1rem;
+border: 1px solid var(--neutral-Very-Dark-Blue);
+border-radius: 1rem;
+background-color: var(--neutral-dark-blue);
+color: var(--primary-orange);
+font-weight: var(--weight-light);
+&:hover {
+    font-weight: var(--weight-high);
+    background: var(--neutral-white);
+    background: linear-gradient(
+        45deg,
+        var(--neutral-white) 33%,
+        var(--neutral-dark-blue) 66%,
+        var(--neutral-Very-Dark-Blue) 100%
+    );
+}
+}
